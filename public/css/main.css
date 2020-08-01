@@ -1,0 +1,130 @@
+body{
+    padding: 0;
+    margin: 0;
+  
+   background-color: #032c55;
+   font-family: Ariel, Helvetica,sans-serif;
+   font-size: 19px;
+   padding:0;
+   margin:0;
+   margin-left:var(--width-collapsed);
+}
+#mapa-cuadro{
+    
+    height: 100%;
+    width: 100%;
+    top: 45pt;
+   position: fixed;
+   
+}
+
+@media  (max-width:1212px){
+    #mapa-cuadro{
+    
+       /* height: 95%;
+        width: 80%; */
+        top: 58pt;
+        padding: 20%;
+       position:fixed;
+       z-index: -1;
+       
+    }
+}
+
+
+
+
+body{
+    background: #FFFFFA;
+}
+header{
+    /*para abarcar el 100% del documento*/
+    width: 100%;
+}
+header nav{
+    width: 90%;
+    max-width: 1000px;
+    margin:10px auto;
+    background: #06747c;
+}
+.menu-bar{
+    /* desaparec el boton menu*/
+    display: none;
+}
+
+header nav ul{
+    /* hacer que no se encimen los elementos a con el texto*/
+    overflow: hidden;
+    /* Quita los puntos del list*/
+    list-style: none;
+}
+header nav ul li{
+    /* Coloca los elementos a a la derecha */
+    float: left;
+}
+
+header ul li{
+    color:rgb(255, 255, 255);
+    
+}
+header nav ul li{
+   padding:10px ;
+   /*Para utilizar el paddin necesita un display  */
+   display:block ;
+   text-decoration: #FFFFFA;
+}
+
+/* para espaciado entre iconos y texto*/
+header nav ul li span{
+    margin-right: 10px;
+}
+/* Efecto al pasar el mouse*/
+header nav ul li:hover{
+    background: #08a8bd;
+}
+
+
+@media screen and (max-width:800px){
+    header nav{
+        width: 35%;
+        height: 100%;
+       /* left:-100%;*/
+        margin: 0;
+        position: fixed;
+        
+    }
+
+    header nav ul li{
+        display:block;
+        float: none;
+        border-bottom:1px solid(255,255,255, .3);
+    }
+
+    .menu-bar{
+        display: block;
+        width:100%;
+        background: #ccc;
+    }
+    .menu-bar .bt-menu{
+        display: block;
+        padding: 20px;
+        background:  #06747c;
+        color: oldlace;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 25px;
+        
+        -webkit-box-sizing:border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+    }
+    .menu-bar span{
+        float: right;
+        font-size:35px;
+    }
+
+
+
+}
+

@@ -1,0 +1,158 @@
+.contenedor{
+	width: 95%;
+	margin: 10px auto;
+}
+.body_div{
+	
+	height: 150px;
+}
+.tabla th{
+	text-align: left;
+	padding: 10px;
+	
+}
+
+.tabla th{
+	background:#6b6a6a ;
+	opacity: 90%;
+	color: #FFF;
+}
+.tabla tr:nth-child(odd){
+background: #e2e6e5;
+}
+.tabla td{
+	padding: 10px;
+	
+}
+.tabla{
+	
+	border:5px solid #ccc;
+	border-collapse: collapse;
+	margin:1px;
+	padding: 0;
+	text-align: center;
+	table-layout: fixed;
+	font-family: 'arial';
+	width: 98%;
+
+}
+.tabla tbody tr:hover{
+	background-color: rgba(0,0,0,0.2);
+}
+.tabla tbody td:hover{
+	background-color: rgba(0,0,0,0.3);
+}
+word-wrap:break-word {
+	word-wrap: break-word;
+-webkit-hyphens: auto;
+-moz-hyphens: auto;
+-ms-hyphens: auto;
+hyphens: auto;
+   }
+
+.link_edit{
+	color: #03FA36;
+
+}
+.link_delete{
+	color: #FA0303;
+}
+
+@media screen and (max-width: 600px){
+	.tabla{
+		border:1px;
+
+	}
+	.h1{
+		font-size: 29px;
+	}
+
+	.tabla thead{
+	display: none;
+	}
+
+	.tabla tr{
+		margin-bottom: 8px;
+		border-bottom: 4px solid #575656;
+		display: block;
+	}
+	.tabla th .tabla td{
+		font-size: 12px;
+	}
+	.tabla td{
+		display: block;
+		border-bottom: 1px solid #575656;
+		text-align: right;
+	}
+	.tabla td:last-child{
+		border-bottom: 0px;
+	}
+	.tabla td::before{
+		content: attr(data-label1);
+		font-weight: bold;
+		text-transform: uppercase;
+		float: left;
+    }
+    
+
+
+}
+
+
+/* Paginador  #428bca*/
+
+.paginador ul{
+	padding: 15px;
+	list-style: none;
+	background: #FFF;
+	margin-top: 15px;
+	display: -webkit-flex;
+	display: -moz-flex-;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-end;
+
+}
+.paginador a, .pageSelected{
+	color: #32b917;
+	border:1px solid #ddd;
+	padding: 5px;
+	display: inline-block;
+	font-size: 15px;
+	text-align: center;
+	width: 40px;
+}
+.paginador a:hover{
+	background: #ddd;
+}
+.pageSelected{
+	color: #fff;
+	background: #32b917;
+	border:2px solid #a3a3a3;
+}
+
+.form-search{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	float: right;
+	background: initial;
+	padding: 10px;
+	border-radius: 10px;
+
+}
+
+.form-search .btn_search{
+	background: #1faac8;
+	color: #FFF;
+	padding: 0 20px;
+	border:0;
+	cursor: pointer;
+	margin-left: 10px;
+
+}
+
+
